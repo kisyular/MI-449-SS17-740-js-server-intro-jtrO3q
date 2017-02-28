@@ -32,7 +32,7 @@ var server = http.createServer(function (request, response) {
     response.end(
       '<p>The requested URL ' + request.url + ' was not found on this server.</p>' +
       '<h1>Page Not Found</h1>' +
-      '<img src="http://i.imgur.com/nymrNQW.png" alt="Page Not Found">'
+      '<img style= "width: 500px; height: auto; margin-left: 400px" src="http://i.imgur.com/nymrNQW.png" alt="Page Not Found">'
     )
   }
 })
