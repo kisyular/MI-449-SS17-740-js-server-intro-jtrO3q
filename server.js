@@ -5,12 +5,12 @@ var http = require('http')
 var server = http.createServer(function (request, response) {
   if (request.url === '/') {
     response.end(
-      '<h1>Hello</h1>' +
-      '<h2>This is Home Page </h2>' +
-      '<p>Other Page URLs are </p>' +
-      '<a href="/cuteness"> Cuteness</a>' +
+      '<h1 style= "margin-left: 400px">Hello</h1>' +
+      '<h2 style= "margin-left: 400px">This is Home Page </h2>' +
+      '<p style= "margin-left: 400px">Other Page URLs are </p>' +
+      '<a href="/cuteness" style= "margin-left: 400px"> Cuteness</a>' +
       '<br/>' +
-      '<a href="/random-joke"> Random Jokes</a>'
+      '<a href="/random-joke" style= "margin-left: 400px"> Random Jokes</a>'
     )
   } else if (request.url === '/random-joke') {
     var textArray = [
@@ -20,19 +20,19 @@ var server = http.createServer(function (request, response) {
     ]
     var randomIndex = Math.floor(Math.random() * textArray.length)
     var randomElement = textArray[randomIndex]
-    response.end('<h1>Knock Knock jokes for kids</h1>' +
-      randomElement
+    response.end('<h1 style= "margin-left: 400px">Knock Knock jokes for kids</h1>' +
+      '<div style= "margin-left: 400px">' + randomElement + '</div>'
     )
   } else if (request.url === '/cuteness') {
     response.end(
-      '<h1>Cuteness</h1>' +
-      '<img src="http://i.imgur.com/kYRMq2u.jpg" alt="Waving hi">'
+      '<h1 style= "margin-left: 400px">Cuteness</h1>' +
+      '<img style="width: 400px; height: auto; margin-left: 400px" src="http://i.imgur.com/kYRMq2u.jpg" alt="Waving hi">'
     )
   } else {
     response.end(
-      '<p>The requested URL ' + request.url + ' was not found on this server.</p>' +
-      '<h1>Page Not Found</h1>' +
-      '<img style= "width: 500px; height: auto; margin-left: 400px" src="http://i.imgur.com/nymrNQW.png" alt="Page Not Found">'
+      '<p style= "margin-left: 400px">The requested URL ' + request.url + ' was not found on this server.</p>' +
+      '<h1 style= "margin-left: 400px">Page Not Found</h1>' +
+      '<img style= "width: 400px; height: auto; margin-left: 400px" src="http://i.imgur.com/nymrNQW.png" alt="Page Not Found">'
     )
   }
 })

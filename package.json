@@ -1,1 +1,19 @@
-{}
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "mi-449-ss17-js-server-intro-jtr03q",
+  "version": "1.0.0",
+  "description": "Introduction to Node Js",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisyular/MI-449-SS17-740-js-server-intro-jtrO3q.git"
+  },
+  "author": "Rellika Kisyula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kisyular/MI-449-SS17-740-js-server-intro-jtrO3q/issues"
+  },
+  "homepage": "https://github.com/kisyular/MI-449-SS17-740-js-server-intro-jtrO3q#readme"
+}
